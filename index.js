@@ -50,6 +50,7 @@ Stopwatch.addEventListener('click',(e)=>{
         });
 
     clear.addEventListener('click',(e)=>{
+        s = 0,h=0,m=0;
         Seconds.textContent=0;
         minutes.textContent = 0;
         hour.textContent = 0;
