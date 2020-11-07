@@ -4,7 +4,7 @@ let clear = document.querySelector('.clear');
 let Seconds = document.querySelector('.Seconds');
 let minutes = document.querySelector('.minutes');
 let hour = document.querySelector('.hour');
-s = 0;m =59,h = 0
+s = 0;m =0,h = 0
 Stopwatch.addEventListener('click',(e)=>{
  
     let timer = setInterval(()=>{
@@ -43,7 +43,7 @@ Stopwatch.addEventListener('click',(e)=>{
                 m = 0
             }
         }
-    },100);
+    },1000);
 
     stop.addEventListener('click',(e)=>{
         clearInterval(timer)
